@@ -2,15 +2,18 @@ import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
 
+class Column extends React.Component {
+  static propTypes = {
+    titleText: PropTypes.string.isRequired,
+  }
 
-const Column = props => (
-  <section className={styles.component}>
-    <h3 className={styles.title}>{props.titleText}</h3>
-  </section>
-);
-
-Column.propTypes = {
-  titleText: PropTypes.node.isRequired,
-};
+  render() {
+    return (
+      <section className={styles.component}>
+        <h3 className={styles.title}>{this.props.titleText}</h3>
+      </section>
+    )
+  }
+}
 
 export default Column;
