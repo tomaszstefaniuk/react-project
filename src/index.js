@@ -1,4 +1,3 @@
-const test = " 1" test test ss
 import React from 'react';
 import './styles/normalize.scss';
 import './styles/global.scss';
